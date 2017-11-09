@@ -1,0 +1,5 @@
+/vendor/
+/config/config.local.neon
+composer.lock
+/temp/
+/tests/output/
