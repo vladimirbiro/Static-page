@@ -1,6 +1,7 @@
 {
     "name": "vladimirbiro/static-page",
     "description": "Spravovanie statickych podstranok",
+    "license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
     "require": {
         "nette/di": "^2.4"
     },
