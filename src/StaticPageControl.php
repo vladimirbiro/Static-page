@@ -5,7 +5,7 @@ use \VladimirBiro\StPage;
 use Nette\Application\UI;
 
 
-class StaticPageControl
+class StaticPageControl extends UI\Control
 {
     /** @var StPage\StaticPageManager */
     private $staticPageManager;
