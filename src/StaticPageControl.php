@@ -18,7 +18,7 @@ class StaticPageControl extends UI\Control
 
     public function render()
     {
-        $this->view(__DIR__ . '/templates/newsletter.latte')->render();
+        $this->template->setFile(__DIR__ . '/templates/newsletter.latte');
 
         // ... Pre javascript validaciu je potrebne pouzit my_modules/newsletter/js/extensions.js
     }
