@@ -5,6 +5,7 @@
 **Neon:**
 
 services:
+    - VladimirBiro\StPage\StaticPageManager
     -
         implement: VladimirBiro\StPage\IStaticPageControlFactory
         inject: yes
