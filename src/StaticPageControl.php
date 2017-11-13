@@ -7,13 +7,13 @@ use Nette\Application\UI;
 
 class StaticPageControl
 {
-    /** @var StPage\NewsletterManager */
-    private $newsletterManager;
+    /** @var StPage\StaticPageManager */
+    private $staticPageManager;
 
 
-    public function __construct(StPage\NewsletterManager $newsletterManager)
+    public function __construct(StPage\StaticPageManager $staticPageManager)
     {
-        $this->newsletterManager = $newsletterManager;
+        $this->staticPageManager = $staticPageManager;
     }
 
     public function render()
@@ -48,10 +48,10 @@ class StaticPageControl
         try {
 
             // kotntrola duplicity mailu
-            if ($this->newsletterManager->duplicityMail($values['email']) === false) {
+            if ($this->staticPageManager->duplicityMail($values['email']) === false) {
 
                 // spracovanie fomrulara
-                $this->newsletterManager->addNewsletterEmail($values);
+                $this->staticPageManager->addNewsletterEmail($values);
 
             }
 
